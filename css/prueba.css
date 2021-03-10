@@ -1,0 +1,22 @@
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 2 / 6;
+    background: red;
+}
+
+.div2 {
+    grid-area: 2 / 1 / 6 / 3;
+    background: blue;
+}
+
+.div3 {
+    grid-area: 2 / 3 / 6 / 6;
+    background: royalblue;
+}
