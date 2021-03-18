@@ -7,3 +7,5 @@ git checkout -- <file> // el archivo vuelve a su ultimo commit
 git diff <file> // me muestra la diferencia entre el mi archivo actual y el ultimo commit
 git add // actualizar datos del commit
 git restore // el archivo vuelve a su ultimo commit
+:wq // terminar commit
+.gitignore // carpeta para ignorar
