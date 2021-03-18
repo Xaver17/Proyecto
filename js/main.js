@@ -1,8 +1,8 @@
 function modalActive(id) {
-    var m = document.getElementById(id);
-    if (m.style.display === "none") {
-        m.style.display = "block";
+    var modal = document.getElementById(id);
+    if (modal.style.display === "none") {
+        modal.style.display = "block";
     } else {
-        m.style.display = "none";
+        modal.style.display = "none";
     }
 }
