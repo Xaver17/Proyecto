@@ -1,11 +1,13 @@
+.gitignore // carpeta para ignorar
+
 git init // iniciar repositorio git
 ls // ver el contenido de una carpeta
 git status // revisar a que le hago segumiento
 git commit // hacer commit
+git commit -m "<Mensaje>" // hacer commit con mensaje si entrar a bin
 git log // info
 git checkout -- <file> // el archivo vuelve a su ultimo commit
 git diff <file> // me muestra la diferencia entre el mi archivo actual y el ultimo commit
 git add // actualizar datos del commit
 git restore // el archivo vuelve a su ultimo commit
 :wq // terminar commit
-.gitignore // carpeta para ignorar
