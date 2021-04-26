@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportadora</title>
+    <link rel="icon" type="image/jpg" href="img/icono.svg" />
+    <!-- Css Only -->
+    <!-- <link rel="stylesheet" href="css/css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/tr.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+</head>
+
+<body>
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span><img src="img/icono.svg" alt="" width="40" height="40"></span>
+                <span>Transportadora</span>
+            </h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="transportadora.html" class=""><span class="las la-home"></span><span>Inicio</span></a>
+                </li>
+                <li>
+                    <a href="tr.html" class="active"><span
+                            class="las la-calendar-alt"></span><span>Asignaciones</span></a>
+                </li>
+                <li>
+                    <a href="" class=""><span class="las la-users"></span><span>Usuarios</span></a>
+                </li>
+                <li>
+                    <a href="" class=""><span class="las la-truck"></span><span>Vehiculos</span></a>
+                </li>
+                <li>
+                    <a href="" class=""><span class="las la-boxes"></span><span>Inventario</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                Calendario
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" name="" id="" placeholder="buscar aquí">
+            </div>
+
+            <div class="user-wrapper">
+                <img src="img/alan.jpg" width="30px" height="30px" alt="">
+                <div>
+                    <h4>Zurley Plata</h4>
+                    <small>Admin User</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- calendario -->
+            <div class="calendario">
+                <div class="calendar-info">
+                    <h1 class="date" id="date"></h1>
+                    <div class="popover-calendar" id="popover-calendar">
+                        <div class="popover-title">
+                            <h2 class="pop-date" id="pop-date">año</h2>
+                            <div class="popover-arrows">
+                                <span class="las la-angle-up pop-prev" id="popPrev" title="Año anterior"></span>
+                                <span class="las la-angle-down pop-next" id="popNext" title="Año siguiente"></span>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="popover-months" id="popover-months">
+                            <!-- <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Ene</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Feb</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Mar</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Abr</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>May</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Jun</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Jul</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Ago</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Sep</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Oct</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Nov</h3>
+                                </div>
+                            </div>
+                            <div class="card-popover">
+                                <div class="text-popover">
+                                    <h3>Dic</h3>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="calendar-arrows">
+                        <span class="las la-angle-up prev" id="prev" title="Mes anterior"></span>
+                        <span class="las la-angle-down next" id="next" title="Mes siguiente"></span>
+                    </div>
+                </div>
+                <div class="month-cards" id="dates">
+                    <!-- <div class="card-single">
+                        <div class="card-day first">
+                            <h1>Domingo</h1>
+                        </div>
+                        <div class="card-single">
+                            <div class="text">
+                                <h1>01</h1>
+                            </div>
+                            <div class="overlay" id="overlay">
+                                <h2></h2>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- modal -->
+            <div class="modal" id="modal" style="display: none;">
+                <div class="flex" id="">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <!-- tarjeta -->
+                            <div class="presentacion">
+                                <div class="img">
+                                    <img src="img/circuit_chip_detail_172735_1366x768.jpg" alt="alan">
+                                </div>
+                                <div class="card-info">
+                                    <a class="close" id="" onclick="modalActive('modal')">&times;</a>
+                                    <div class="card-text">
+                                        <h1>Alan Walker</h1>
+                                        <h2>DJ Electronico</h2>
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum reiciendis
+                                            quod
+                                            asperiores lore
+                                            necessitatibus accusantium ducimus dicta modi</p>
+                                    </div>
+                                    <div class="card-btn">
+                                        <a href="#" id="envia">Escuchar Musica</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
